@@ -239,11 +239,8 @@ function create_config( )
       "persian_lang",
       "settings",
       "spam",
-      "spanish_lang",
-      "version",
-      "italian_lang",
-      "portuguese_lang",
-      "arabic"
+      "version"
+      --"arabic"
      },
     sudo_users = {158990680},--ایدی خود را در کادر روبرو بجای 158990680 بگذارید
     admin_users = {},

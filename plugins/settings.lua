@@ -1,18 +1,3 @@
---------------------------------------------------
---      ____  ____ _____                        --
---     |    \|  _ )_   _|___ ____   __  __      --
---     | |_  )  _ \ | |/ ·__|  _ \_|  \/  |     --
---     |____/|____/ |_|\____/\_____|_/\/\_|     --
---                                              --
---------------------------------------------------
---                                              --
---       Developers: @Josepdal & @MaSkAoS       --
---     Support: @Skneos,  @iicc1 & @serx666     --
---                                              --
---    #creategroup by @lamjavid &  @Josepdal	--
---												--
---------------------------------------------------
-
 do
 
 local function create_group(msg, group_name)
@@ -222,7 +207,7 @@ local function run(msg, matches)
                         end
                     end
                     return
-                 elseif matches[2] == 'arabic' then
+                 --[[elseif matches[2] == 'arabic' then
                     if matches[3] == 'enable' then
                         hash = 'arabic:'..msg.to.id
                         redis:del(hash)
@@ -239,7 +224,7 @@ local function run(msg, matches)
                         elseif msg.to.type == 'channel' then
                             send_msg('channel#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'noArabicL'), ok_cb, false)
                         end
-                    end
+                    end]]
                     return
                 elseif matches[2] == 'audios' then
                     if matches[3] == 'enable' then
@@ -409,7 +394,7 @@ local function run(msg, matches)
                 end
                 text = text..sLinkD..' '..lang_text(msg.to.id, 'links')..': '..sLink..'\n'
 
-                --Enable/disable arabic messages
+                --[[Enable/disable arabic messages
                 local hash = 'arabic:'..msg.to.id
                 if not redis:get(hash) then
                     sArabe = allowed
@@ -418,7 +403,7 @@ local function run(msg, matches)
                     sArabe = noAllowed
                     sArabeD = '🔹'
                 end
-                text = text..sArabeD..' '..lang_text(msg.to.id, 'arabic')..': '..sArabe..'\n'
+                text = text..sArabeD..' '..lang_text(msg.to.id, 'arabic')..': '..sArabe..'\n']]
 
                 --Enable/disable bots
                 local hash = 'antibot:'..msg.to.id

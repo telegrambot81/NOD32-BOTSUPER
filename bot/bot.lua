@@ -245,7 +245,7 @@ function create_config( )
       "portuguese_lang",
       "arabic"
      },
-    sudo_users = {158990680},--ایدی خود را در این قسمت بگذارید
+    sudo_users = {158990680},--ایدی خود را در کادر روبرو بجای 158990680 بگذارید
     admin_users = {},
     disabled_channels = {}
   }

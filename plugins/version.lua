@@ -1,25 +1,39 @@
---------------------------------------------------
---      ____  ____ _____                        --
---     |    \|  _ )_   _|___ ____   __  __      --
---     | |_  )  _ \ | |/ ·__|  _ \_|  \/  |     --
---     |____/|____/ |_|\____/\_____|_/\/\_|     --
---                                              --
---------------------------------------------------
---                                              --
---       Developers: @Josepdal & @MaSkAoS       --
---     Support: @Skneos,  @iicc1 & @serx666     --
---                                              --
---------------------------------------------------
-
 do
 
 function run(msg, matches)
-  return 'DBTeam Bot V1 Supergroups\nAn advanced Administration bot based on yagop/telegram-bot \n\nhttp://github.com/Josepdal/DBTeam\n\nDevelopers :\n@MaSkAoS\n@Josepdal\n\nSupport :\n@skneos\n@iicc1\n@Serx666' 
-  --[[ Checkout https://github.com/Josepdal/DBTeam
-  --GNU GPL v2 license.]]
+  return 'IN THE NAME OF GOD. '.. VERSION .. [[ 
+NOD32 ANTI SPAM TG BOT (͡° ͜ʖ ͡°)
+An advance and powerful Administration bot based on DBTeam.
+ESET NOD32 AntiSpams, commonly known as NOD32, is an AntiSpam Bot  made by the @BehroozYaghi idea
+_______________________________
+#Mute and #unmute msg.
+#Global ban.
+#Group link.
+#Kick,ban and unban by reply.
+#Group administration.
+#word filter.
+#Wikipedia En and Pe language.
+#Up time Group.
+#flood mod.
+#gbans list.
+#Switches language mod.
+#recalcitrant to any kind of spamming.
+#And ...
+_______________________________
+Developer : @Behroozyaghi
+Channel : @Nod32team
+  
+Open git (Nod Super):
+----https://github.com/BH-YAGHI/NOD32-BOT.git ----
+ 
+Copyright © 2016 
+All Rights Reserved.
+]]
 end
 
 return {
+  description = "Shows bot version", 
+  usage = "#version: Shows bot version",
   patterns = {
     "^#version$"
   }, 
